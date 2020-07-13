@@ -1,98 +1,1053 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="admin,dashboard,template,angular,bootstrap,blur,panel,html,css,javascript">
-    <title>Admin HTML template based on Angular, Bootstrap 4 and Angular CLI</title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900|Anonymous+Pro:400,700,400italic,700italic&amp;subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css">
-    <link rel="stylesheet" href="/ng2-admin/css/main.css">
-    <link rel="shortcut icon" href="/ng2-admin/images/favicon.png"><!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K8MXX5F');</script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8MXX5F"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="container">
-      <div class="nav-main">
-        <div class="wrap"><a href="/ng2-admin/" class="nav-home"><img src="/ng2-admin/images/logo.png" width="24" height="24" class="nav-logo">&nbsp;<span class="blur-label">ng2-</span>admin</a>
-          <ul class="nav-site nav-site-internal">
-            <li><a href="/ng2-admin/" class="active">Home</a></li>
-            <li><a href="/ng2-admin/articles/001-getting-started/">Docs</a></li>
-          </ul><span class="nav-docs-right">Need some help? Let us know! <a href="mailto:contact@akveo.com">contact@akveo.com</a></span>
-        </div>
-      </div>
-      <div class="hero">
-        <div class="hero-content">
-          <div class="wrap">
-            <div class="text"><strong>ng2-<span class="white-text">admin</span></strong></div>
-            <div class="minitext">Angular admin panel front-end framework</div>
-            <div class="buttons-unit"><a href="/ng2-admin/articles/002-installation-guidelines/" class="button">Installation guidelines</a><a href="/ng2-admin/articles/001-getting-started/" class="button">Documentation</a></div>
-            <div class="admin-screenshots">
-              <div class="admin-screenshot">
-                <div class="browser-mockup"><a href="http://akveo.com/ng2-admin/" target="_blank" class="demo-link"><img src="/ng2-admin/images/sky-preview.png"><span class="demo-link-label">Demo</span></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="index-block">
-        <div class="wrap">
-          <h1 class="centered">Why ng2-admin?</h1>
-          <div class="why-items">
-            <div class="why-item"><img src="/ng2-admin/images/why-structure.svg">
-              <h4>Awesome structure</h4>
-              <p>Component-based structure is the best choice for large Angular applications.</p>
-            </div>
-            <div class="why-item"><img src="/ng2-admin/images/why-design.svg">
-              <h4>Neat design</h4>
-              <p>We have put a lot of effort and carefully selected each color and font for this template!</p>
-            </div>
-            <div class="why-item"><img src="/ng2-admin/images/why-practices.svg">
-              <h4>Ease of customization</h4>
-              <p>Check out <a href="/ng2-admin/articles/011-changing-color-scheme">our article</a>, where we describe how you can create a different look in just 2 minutes!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="index-block">
-        <div class="wrap">
-          <h1 class="centered">Is it free?</h1>
-          <p>Yes, ng2-admin is completely free and MIT licensed. That means you can do with it whatever you want.</p>
-        </div>
-      </div>
-      <div class="index-block">
-        <div class="wrap">
-          <h1 class="centered">How can I support you guys?</h1>
-          <p>Here's what you can do:</p>
-          <ul>
-            <li>Star <a href="https://github.com/akveo/ng2-admin" target="_blank">our GitHub repo</a></li>
-            <li>Create pull requests, submit bugs, suggest new features</li>
-            <li>Follow <a href="https://twitter.com/akveo_inc" target="_blank">us on Twitter</a></li>
-            <li>Like <a href="https://www.facebook.com/akveo/" target="_blank">our page on Facebook</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="index-block">
-        <div class="wrap">
-          <h1 class="centered">Can I hire you?</h1>
-          <p>Yes! We are available for hire. Visit <a href="http://akveo.com" target="_blank">our homepage</a>&nbsp;or simply leave us a note at <a href="mailto:contact@akveo.com">contact@akveo.com</a>.&nbsp;We will be happy to work with you!</p>
-        </div>
-      </div>
-      <footer class="wrap">
-        <div class="left">Powered by Angular, Bootstrap 4, Angular CLI and many more...</div>
-        <div class="right">© 2017 Akveo LLC<br />Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</div>
-      </footer>
-    </div><a href="https://github.com/akveo/ng2-admin" title="Star &amp; Fork on GitHub" class="github-fork-ribbon"></a>
-  </body>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ankur Verma&rsquo;s Blog</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="site.css" />
+<style>.newspaper { column-count: 3;}</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Ankur Verma&rsquo;s Blog
+<br />
+<span class="subtitle">Ph.D. Scholar @ Center for Economic Studies &amp; Planning, Jawaharlal Nehru University, New Delhi, India</span>
+</h1>
+<div class="org-center">
+<hr />
+
+<p>
+<a href="./academic_database.html">DATABASES</a> | LEARN R | LEARN PYTHON | WEEKLY REVIEWS
+</p>
+
+<hr />
+
+<p>
+Click <a href="./references.bib">here</a> to get the database in bibtex format.
+</p>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-R">read.csv(<span style="color: #8b2252;">"refernces.csv"</span>)<span style="color: #008b8b;">-&gt;</span>df
+df[,c(1:6)]
+</pre>
+</div>
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" align="center">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Item.Type</th>
+<th scope="col" class="org-right">Publication.Year</th>
+<th scope="col" class="org-left">Author</th>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Publication.Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">63KSZNVZ</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2001</td>
+<td class="org-left">Rawal, Vikas</td>
+<td class="org-left">Irrigation Statistics in West Bengal</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">HQ9EJN89</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2001</td>
+<td class="org-left">Rawal, Vikas</td>
+<td class="org-left">Expansion of Irrigation in West Bengal: Mid-1970s to Mid-1990s</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">J8AZY42G</td>
+<td class="org-left">webpage</td>
+<td class="org-right">2020</td>
+<td class="org-left">Sirohi, Nishant Singh</td>
+<td class="org-left">The human right to water in a pandemic</td>
+<td class="org-left">Observer Research Foundation</td>
+</tr>
+
+<tr>
+<td class="org-left">AP4H4Z68</td>
+<td class="org-left">newspaperArticle</td>
+<td class="org-right">2020</td>
+<td class="org-left">Bhosle, Jayashree</td>
+<td class="org-left">Mumbai wholesale market opens on Wednesday</td>
+<td class="org-left">The Economic Times</td>
+</tr>
+
+<tr>
+<td class="org-left">CL2UWWBC</td>
+<td class="org-left">newspaperArticle</td>
+<td class="org-right">2020</td>
+<td class="org-left">Chaba, Anju Agnihotri; Jagga, Raakhi</td>
+<td class="org-left">Wheat procurement operation gets off to a slow start, mandis wear a deserted look</td>
+<td class="org-left">The Indian Express</td>
+</tr>
+
+<tr>
+<td class="org-left">LDUCHLDS</td>
+<td class="org-left">newspaperArticle</td>
+<td class="org-right">2020</td>
+<td class="org-left">Economic Times</td>
+<td class="org-left">Punjab ropes in 409 rice mills to boost wheat procurement</td>
+<td class="org-left">The Economic Times</td>
+</tr>
+
+<tr>
+<td class="org-left">7RTICRM4</td>
+<td class="org-left">newspaperArticle</td>
+<td class="org-right">2020</td>
+<td class="org-left">Chaba, Anju Agnihotri</td>
+<td class="org-left">Explained: How Punjab met procurement challenge</td>
+<td class="org-left">The Indian Express</td>
+</tr>
+
+<tr>
+<td class="org-left">VNKFLVSK</td>
+<td class="org-left">newspaperArticle</td>
+<td class="org-right">2020</td>
+<td class="org-left">Khanna, Rajeev</td>
+<td class="org-left">Punjab procures wheat in the shadow of COVID-19</td>
+<td class="org-left">Down to Earth</td>
+</tr>
+
+<tr>
+<td class="org-left">E2DSE2KN</td>
+<td class="org-left">newspaperArticle</td>
+<td class="org-right">2020</td>
+<td class="org-left">Khera, Reetika</td>
+<td class="org-left">Why cash can save the rural jobs scheme</td>
+<td class="org-left">Livemint</td>
+</tr>
+
+<tr>
+<td class="org-left">7BDNU6G4</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2019</td>
+<td class="org-left">Rawal, Vikas; Bansal, Vaishali; Bansal, Prachi</td>
+<td class="org-left">Prevalence of Undernourishment in Indian States</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">2864STKA</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2017</td>
+<td class="org-left">Kumar, Arun; Verma, Ankur</td>
+<td class="org-left">What Do We Know about Remonetisation?</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">Y9ZQF5B8</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2020</td>
+<td class="org-left">Verma, Ankur</td>
+<td class="org-left">The Injustice of Child Mortality</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">LEAM4CWW</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2020</td>
+<td class="org-left">Delbourg, Esther; Dinar, Shlomi</td>
+<td class="org-left">The globalization of virtual water flows: Explaining trade patterns of a scarce resource</td>
+<td class="org-left">World Development</td>
+</tr>
+
+<tr>
+<td class="org-left">Y5W5FSZG</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2017</td>
+<td class="org-left">Kishore, Avinash; Joshi, PK; Pandey, Divya</td>
+<td class="org-left">Harnessing the sun for an evergreen revolution: a study of solar-powered irrigation in Bihar, India</td>
+<td class="org-left">Water International</td>
+</tr>
+
+<tr>
+<td class="org-left">B6Y4I4QJ</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2018</td>
+<td class="org-left">Patnaik, Ila; Roy, Shubho; Shah, Ajay</td>
+<td class="org-left">The rise of government-funded health insurance in India</td>
+<td class="org-left">National Institute of Public Finance and Policy</td>
+</tr>
+
+<tr>
+<td class="org-left">CUK62C3R</td>
+<td class="org-left">blogPost</td>
+<td class="org-right">2020</td>
+<td class="org-left">Lempriere, Dr Max</td>
+<td class="org-left">6 Things New PhD Students Should Know</td>
+<td class="org-left">The PhD Proofreaders</td>
+</tr>
+
+<tr>
+<td class="org-left">RVWW9ZBI</td>
+<td class="org-left">document</td>
+<td class="org-right">2020</td>
+<td class="org-left">Rawal, Vikas; Kumar, Manish; Verma, Ankur; Pais, Jesim</td>
+<td class="org-left">COVID-19 Lockdown: Impact on Agriculture and Rural Economy</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">GCKBNLQZ</td>
+<td class="org-left">webpage</td>
+<td class="org-right">2019</td>
+<td class="org-left">Verma, Ankur</td>
+<td class="org-left">Claims versus Reality: Who Benefits from Government Funded Health Insurance?</td>
+<td class="org-left">International Development Economic Associates</td>
+</tr>
+
+<tr>
+<td class="org-left">WJLNA55X</td>
+<td class="org-left">webpage</td>
+<td class="org-right">2019</td>
+<td class="org-left">Patel, Suvidya</td>
+<td class="org-left">Claim versus Reality: Has India become open defecation free? – IDEAs</td>
+<td class="org-left">International Development Economic Associates</td>
+</tr>
+
+<tr>
+<td class="org-left">J2R6VDC9</td>
+<td class="org-left">magazineArticle</td>
+<td class="org-right">2019</td>
+<td class="org-left">Patel, Suvidya</td>
+<td class="org-left">Claim versus Reality: Has India become open defecation free?</td>
+<td class="org-left">Macroscan</td>
+</tr>
+
+<tr>
+<td class="org-left">Q5QL2E6F</td>
+<td class="org-left">webpage</td>
+<td class="org-right">2019</td>
+<td class="org-left">Patel, Suvidya</td>
+<td class="org-left">Claim Vs Reality: Has India Become Open Defecation Free?</td>
+<td class="org-left">NewsClick</td>
+</tr>
+
+<tr>
+<td class="org-left">YAGNXMDK</td>
+<td class="org-left">webpage</td>
+<td class="org-right">2017</td>
+<td class="org-left">Patel, Suvidya</td>
+<td class="org-left">Lives of Peasants in India #10</td>
+<td class="org-left">NewsClick</td>
+</tr>
+
+<tr>
+<td class="org-left">U2WLQWK2</td>
+<td class="org-left">report</td>
+<td class="org-right">2015</td>
+<td class="org-left">Barenberg, Andrew J.; Basu, Deepankar; Soylu, Ceren</td>
+<td class="org-left">The effect of public health expenditure on infant mortality: Evidence from a panel of Indian states, 1983-84 to 2011-12</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2777A5YP</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1955</td>
+<td class="org-left">Chandrasekhar, S</td>
+<td class="org-left">Some observations on infant mortality in India: 1901—1951</td>
+<td class="org-left">The Eugenics Review</td>
+</tr>
+
+<tr>
+<td class="org-left">NMFLZHCR</td>
+<td class="org-left">book</td>
+<td class="org-right">2002</td>
+<td class="org-left">Dreze, Jean; Sen, Amartya</td>
+<td class="org-left">India: Development and participation</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">SD7EJN53</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1985</td>
+<td class="org-left">Jain, A.K.</td>
+<td class="org-left">Determinants of regional variations in infant mortality in rural india</td>
+<td class="org-left">Population Studies</td>
+</tr>
+
+<tr>
+<td class="org-left">LH87SG76</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2013</td>
+<td class="org-left">Narwal, Rajesh; Gram, Lu</td>
+<td class="org-left">Has the rate of reduction in infant mortality increased in india since the launch of national rural health mission? Analysis of time trends 2000-2009 with projection to 2015</td>
+<td class="org-left">International Journal of MCH and AIDS</td>
+</tr>
+
+<tr>
+<td class="org-left">MXH8TJ7K</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2017</td>
+<td class="org-left">The World Bank</td>
+<td class="org-left">World development indicators</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">AV76ML3B</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2018</td>
+<td class="org-left">Maji, Kamal Jyoti; Arora, Mohit; Dikshit, Anil Kumar</td>
+<td class="org-left">Premature mortality attributable to PM2.5 exposure and future policy roadmap for ‘airpocalypse’ affected Asian megacities</td>
+<td class="org-left">Process Safety and Environmental Protection</td>
+</tr>
+
+<tr>
+<td class="org-left">Y9TYR5MG</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">nil</td>
+<td class="org-left">Department of Health and Family Welfare</td>
+<td class="org-left">Annual report 2017-18</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4IH2KJHW</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2017</td>
+<td class="org-left">Ministry of Health and Family Welfare, Government of India</td>
+<td class="org-left">National health accounts estimates for india</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Z8VDNVY6</td>
+<td class="org-left">report</td>
+<td class="org-right">1983</td>
+<td class="org-left">Ministry of Health and Family Welfare</td>
+<td class="org-left">National health policy, 1983</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">RC6GD3KQ</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2017</td>
+<td class="org-left">Ghosh, Soumitra; Gupta, Nabanita Dattta</td>
+<td class="org-left">Targeting and effects of rashtriya swasthya bima yojana on access to care and financial protection</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">VEMI6PXQ</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2017</td>
+<td class="org-left">Mishra, S. K.; Ram, Bali; Singh, Abhishek; Yadav, Awdhesh</td>
+<td class="org-left">Birth order, stage of infancy and infant mortality in india</td>
+<td class="org-left">Journal of Biosocial Science</td>
+</tr>
+
+<tr>
+<td class="org-left">G6XKHTFP</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2013</td>
+<td class="org-left">Tura, Gurmesa; Fantahun, Mesganaw; Worku, Alemayehu</td>
+<td class="org-left">The effect of health facility delivery on neonatal mortality: systematic review and meta-analysis</td>
+<td class="org-left">BMC pregnancy and childbirth</td>
+</tr>
+
+<tr>
+<td class="org-left">PAD7ZVBL</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2012</td>
+<td class="org-left">Ibrahim, Juliani; Yorifuji, Takashi; Tsuda, Toshihide; Kashima, Saori; Doi, Hiroyuki</td>
+<td class="org-left">Frequency of antenatal care visits and neonatal mortality in indonesia</td>
+<td class="org-left">Journal of Tropical Pediatrics</td>
+</tr>
+
+<tr>
+<td class="org-left">PG69YHFE</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2014</td>
+<td class="org-left">Das, Jishnu; Hammer, Jeffrey</td>
+<td class="org-left">Are institutional births institutionalizing deaths</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">VAKYQHQH</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1983</td>
+<td class="org-left">Zachariah, KC; Patel, Sulekha</td>
+<td class="org-left">Trends and determinants of infant and child mortality in Kerala</td>
+<td class="org-left">Janasamkhya</td>
+</tr>
+
+<tr>
+<td class="org-left">KLN32RLX</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1984</td>
+<td class="org-left">Mosley, W Henry; Chen, Lincoln C</td>
+<td class="org-left">An analytical framework for the study of child survival in developing countries</td>
+<td class="org-left">Population and development review</td>
+</tr>
+
+<tr>
+<td class="org-left">3MBU5TTI</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2010</td>
+<td class="org-left">Rajaratnam, Julie Knoll; Marcus, Jake R; Flaxman, Abraham D; Wang, Haidong; Levin-Rector, Alison; Dwyer, Laura; Costa, Megan; Lopez, Alan D; Murray, Christopher JL</td>
+<td class="org-left">Neonatal, postneonatal, childhood, and under-5 mortality for 187 countries, 1970–2010: a systematic analysis of progress towards Millennium Development Goal 4</td>
+<td class="org-left">The Lancet</td>
+</tr>
+
+<tr>
+<td class="org-left">725Y2WFW</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1988</td>
+<td class="org-left">Ghosh, Shanti</td>
+<td class="org-left">Causes of infant deaths</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">Z83FZ9BD</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1985</td>
+<td class="org-left">Visaria, Leela</td>
+<td class="org-left">Infant mortality in india-level, trends and determinants</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">W8VMQN22</td>
+<td class="org-left">book</td>
+<td class="org-right">1988</td>
+<td class="org-left">Visaria, Pravin M; Jain, Anrudh K</td>
+<td class="org-left">Infant mortality in india : Differentials and determinants</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">BX5EHYS5</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1988</td>
+<td class="org-left">Jain, Anrudh K; Visaria, Pravin</td>
+<td class="org-left">Infant mortality in India: differentials and determinants.</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">JKNL3LQK</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2013</td>
+<td class="org-left">Kumar, Kaushalendra; Ram, Faujdar; Singh, Abhishek</td>
+<td class="org-left">Public health spending on infant and child mortality in India during the years 1980–2006</td>
+<td class="org-left">The Lancet</td>
+</tr>
+
+<tr>
+<td class="org-left">FELQHG4T</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2003</td>
+<td class="org-left">Chay, Kenneth Y.; Greenstone, Michael</td>
+<td class="org-left">The impact of air pollution on infant mortality: Evidence from geographic variation in pollution shocks induced by a recession</td>
+<td class="org-left">The Quarterly Journal of Economics</td>
+</tr>
+
+<tr>
+<td class="org-left">2FXEWMYK</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2002</td>
+<td class="org-left">Gokhale, Medha K.; Rao, Shobha S.; Garole, Varsha R.</td>
+<td class="org-left">Infant mortality in india: Use of maternal and child health services in relation to literacy status</td>
+<td class="org-left">Journal of Health, Population and Nutrition</td>
+</tr>
+
+<tr>
+<td class="org-left">2PBEZLXX</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2013</td>
+<td class="org-left">Mekonnen, Yared; Tensou, Biruk; Telake, Daniel S.; Degefie, Tedbabe; Bekele, Abeba</td>
+<td class="org-left">Neonatal mortality in Ethiopia: trends and determinants</td>
+<td class="org-left">BMC Public Health</td>
+</tr>
+
+<tr>
+<td class="org-left">6KTY252C</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2013</td>
+<td class="org-left">Singh, Aditya; Kumar, Abhishek; Kumar, Amit</td>
+<td class="org-left">Determinants of neonatal mortality in rural India, 2007–2008</td>
+<td class="org-left">PeerJ</td>
+</tr>
+
+<tr>
+<td class="org-left">YLLGN8GM</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2009</td>
+<td class="org-left">Subramanian, SV; Ackerson, Leland K; Smith, George Davey; John, Neetu A</td>
+<td class="org-left">Association of maternal height with child mortality, anthropometric failure, and anemia in India</td>
+<td class="org-left">Jama</td>
+</tr>
+
+<tr>
+<td class="org-left">QI82BZ54</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2003</td>
+<td class="org-left">Rahmathullah, Lakshmi; Tielsch, James M; Thulasiraj, R D; Katz, Joanne; Coles, Christian; Devi, Sheela; John, Rajeesh; Prakash, Karthik; Sadanand, A V; Edwin, N; Kamaraj, C</td>
+<td class="org-left">Impact of supplementing newborn infants with vitamin A on early infant mortality: community based randomised trial in southern India</td>
+<td class="org-left">BMJ: British Medical Journal</td>
+</tr>
+
+<tr>
+<td class="org-left">TCNCHWIQ</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2006</td>
+<td class="org-left">von Ehrenstein, O. S.; Guha Mazumder, D. N.; Hira-Smith, M.; Ghosh, N.; Yuan, Y.; Windham, G.; Ghosh, A.; Haque, R.; Lahiri, S.; Kalman, D.; Das, S.; Smith, A. H.</td>
+<td class="org-left">Pregnancy outcomes, infant mortality, and arsenic in drinking water in west bengal, india</td>
+<td class="org-left">American Journal of Epidemiology</td>
+</tr>
+
+<tr>
+<td class="org-left">PPREJPK5</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1990</td>
+<td class="org-left">Bang, A.T; Bang, R.A; Tale, O; Sontakke, P; Solanki, J; Wargantiwar, R; Kelzarkar, P</td>
+<td class="org-left">Reduction in pneumonia mortality and total childhood mortality by means of community-based intervention trial in Gadchiroli, India</td>
+<td class="org-left">The Lancet</td>
+</tr>
+
+<tr>
+<td class="org-left">BQ2HBMDV</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1990</td>
+<td class="org-left">Gupta, Monica Das</td>
+<td class="org-left">Death clustering, mothers&rsquo; education and the determinants of child mortality in rural punjab, india</td>
+<td class="org-left">Population Studies</td>
+</tr>
+
+<tr>
+<td class="org-left">GVQM7YLJ</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2005</td>
+<td class="org-left">Lawn, Joy E; Cousens, Simon; Zupan, Jelka</td>
+<td class="org-left">4 million neonatal deaths: When? Where? Why?</td>
+<td class="org-left">The Lancet</td>
+</tr>
+
+<tr>
+<td class="org-left">CPPP94MB</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2017</td>
+<td class="org-left">Naline, G.; Viswanathan, Brinda</td>
+<td class="org-left">Predictors of age-specific childhood mortality in india</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3R325QF8</td>
+<td class="org-left">report</td>
+<td class="org-right">2012</td>
+<td class="org-left">NIMS, ICMR; UNICEF</td>
+<td class="org-left">Infant and child mortality in india: Levels, trends and determinants</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">MDKI8TU3</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2010</td>
+<td class="org-left">Bhalotra, Sonia; Valente, Christine; Van Soest, Arthur</td>
+<td class="org-left">The puzzle of Muslim advantage in child survival in India</td>
+<td class="org-left">Journal of Health Economics</td>
+</tr>
+
+<tr>
+<td class="org-left">B4JVDBNE</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2014</td>
+<td class="org-left">Geruso, Michael; Spears, Dean</td>
+<td class="org-left">Sanitation and health externalities: Resolving the Muslim mortality paradox</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4B8DLXZ4</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2006</td>
+<td class="org-left">Barford, Anna; Dorling, Danny; Smith, George Davey; Shaw, Mary</td>
+<td class="org-left">Life expectancy: women now on top everywhere</td>
+<td class="org-left">BMJ: British Medical Journal</td>
+</tr>
+
+<tr>
+<td class="org-left">BC5G9IHE</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">nil</td>
+<td class="org-left">Duggal, Ravi</td>
+<td class="org-left">Health planning in india</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">EJRSRECY</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2018</td>
+<td class="org-left">Modak, Tapas Singh</td>
+<td class="org-left">From Public to Private Irrigation: Implications for Equity in Access to Water</td>
+<td class="org-left">Review of Agrarian Studies</td>
+</tr>
+
+<tr>
+<td class="org-left">A33QW2NN</td>
+<td class="org-left">book</td>
+<td class="org-right">1949</td>
+<td class="org-left">Namboodiripad, E. M.S.; Communist Party of India</td>
+<td class="org-left">On the agrarian question in India</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">9KBUZLK7</td>
+<td class="org-left">book</td>
+<td class="org-right">2011</td>
+<td class="org-left">Patnaik, Utsa; Moyo, Sam</td>
+<td class="org-left">The Agrarian Question in the Neoliberal Era: Primitive Accumulation and the Peasantry</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">LSS4RC46</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2004</td>
+<td class="org-left">Patnaik, Utsa</td>
+<td class="org-left">The republic of hunger</td>
+<td class="org-left">Social Scientist</td>
+</tr>
+
+<tr>
+<td class="org-left">T6PS5DRR</td>
+<td class="org-left">conferencePaper</td>
+<td class="org-right">2017</td>
+<td class="org-left">Dhawan, Vibha</td>
+<td class="org-left">Water and agriculture in India</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">52PLU89H</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1988</td>
+<td class="org-left">Dhawan, B. D.</td>
+<td class="org-left">Indian Irrigation: An Assessment</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">KZ7U78NE</td>
+<td class="org-left">bookSection</td>
+<td class="org-right">2017</td>
+<td class="org-left">Acciavatti, Anthony</td>
+<td class="org-left">Re-imagining the Indian Underground:: A Biography of the Tubewell</td>
+<td class="org-left">Places of Nature in Ecologies of Urbanism</td>
+</tr>
+
+<tr>
+<td class="org-left">TBKL54E7</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2018</td>
+<td class="org-left">Shrestha, Anushiya; Roth, Dik; Joshi, Deepa</td>
+<td class="org-left">Flows of change: dynamic water rights and water access in peri-urban Kathmandu</td>
+<td class="org-left">Ecology and Society</td>
+</tr>
+
+<tr>
+<td class="org-left">3RCXQSIT</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2019</td>
+<td class="org-left">Wyman, Katrina M.</td>
+<td class="org-left">Second Generation Property Rights Issues</td>
+<td class="org-left">Natural Resources Journal</td>
+</tr>
+
+<tr>
+<td class="org-left">BAV6TYMX</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">1974</td>
+<td class="org-left">Appu, P. S.</td>
+<td class="org-left">Agrarian Structure and Rural Development</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">FQDN2VFB</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2004</td>
+<td class="org-left">Kishore, Avinash</td>
+<td class="org-left">Understanding Agrarian Impasse in Bihar</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">YWQNG576</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2011</td>
+<td class="org-left">Narayanamoorthy, A.</td>
+<td class="org-left">Development and composition of irrigation in India: Temporal trends and regional patterns</td>
+<td class="org-left">Irrigation and Drainage</td>
+</tr>
+
+<tr>
+<td class="org-left">WX5KT55W</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2011</td>
+<td class="org-left">Shah, Tushaar</td>
+<td class="org-left">Past, present, and the future of canal irrigation in india</td>
+<td class="org-left">INDIA INFRASTRUCTURE REPORT</td>
+</tr>
+
+<tr>
+<td class="org-left">9T497RE9</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2014</td>
+<td class="org-left">Srinivasan, Veena; Kulkarni, Seema</td>
+<td class="org-left">Examining the emerging role of groundwater in water inequity in India</td>
+<td class="org-left">Water International</td>
+</tr>
+
+<tr>
+<td class="org-left">8DHK5UUA</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2006</td>
+<td class="org-left">Gujja, Biksham; Joy, K. J.; Paranjape, Suhas; Goud, Vinod; Vispute, Shruti</td>
+<td class="org-left">&rsquo;Million Revolts&rsquo; in the Making</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+
+<tr>
+<td class="org-left">ZPDNNTNB</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2019</td>
+<td class="org-left">Pandit, Chetan; Biswas, Asit K.</td>
+<td class="org-left">India’s National Water Policy: ‘feel good’ document, nothing more</td>
+<td class="org-left">International Journal of Water Resources Development</td>
+</tr>
+
+<tr>
+<td class="org-left">IK9M6HIN</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2010</td>
+<td class="org-left">Srinivasan, Veena; Gorelick, Steven M.; Goulder, Lawrence</td>
+<td class="org-left">Factors determining informal tanker water markets in Chennai, India</td>
+<td class="org-left">Water International</td>
+</tr>
+
+<tr>
+<td class="org-left">6T2GM8VA</td>
+<td class="org-left">journalArticle</td>
+<td class="org-right">2020</td>
+<td class="org-left">Hooda, Shailender Kumar</td>
+<td class="org-left">Decoding Ayushman Bharat</td>
+<td class="org-left">Economic and Political Weekly</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">ID</th>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Author(s)</th>
+<th scope="col" class="org-left">Journal/Publisher</th>
+<th scope="col" class="org-right">Year</th>
+<th scope="col" class="org-left">Tags</th>
+<th scope="col" class="org-left">Read</th>
+<th scope="col" class="org-left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><a href="http://www.ras.org.in/from_public_to_private_irrigation">1</a></td>
+<td class="org-left">From Public to Private Irrigation: Implications for Equity in Access to Water</td>
+<td class="org-left">Tapas Singh Modak</td>
+<td class="org-left">Review of Agrarian Studies</td>
+<td class="org-right">2018</td>
+<td class="org-left">agriculture, irrigation, water, inequality</td>
+<td class="org-left">Y</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2</td>
+<td class="org-left">Indian Irrigation: An Assessment</td>
+<td class="org-left">B. D. Dhawan</td>
+<td class="org-left">EPW</td>
+<td class="org-right">1988</td>
+<td class="org-left">agriculture, irrigation</td>
+<td class="org-left">N</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
 </html>
