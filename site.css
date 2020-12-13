@@ -9,11 +9,11 @@ body {
   line-height: 1.4;
   font-size: 16px;
   background: #fff;
-  color: #666;
+  color: #555;
   margin: 0;
   border-top: 3px solid #1692cc;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1099px) {
   body {
     padding: 15px;
     font-size: .95em;
@@ -44,13 +44,13 @@ body h4 img {
   border: 0 none;
 }
 body h1 {
-  font-size: 42px;
+  font-size: 36px;
   margin-top: 40px;
 }
 body h2 {
   margin-top: 60px;
   position: relative;
-  font-size: 32px;
+  font-size: 28px;
 }
 body h3 {
   font-size: 22px;
@@ -146,8 +146,8 @@ body .org-info-js_info-navigation {
   body #content,
   body #postamble {
     margin: 0 auto;
-    max-width: 1100px !important;
-    width: 1100px !important;
+    max-width: 1300px !important;
+    width: 1300px !important;
   }
 }
 body #content {
@@ -231,4 +231,7 @@ body .clearfix {
     column-count: 2;
     column-gap: 3em;
   }
+}
+.org-center {
+    text-align: center;
 }
