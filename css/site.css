@@ -1,3 +1,117 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Saira+Semi+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&family=Saira+Semi+Condensed:wght@100&display=swap');
+
+/* readable*/
+body {
+  margin: 0 auto;
+  max-width: 60em;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+  padding: 4em 1em;
+}
+
+header#preamble {
+    background-color: white;
+}
+
+header#preamble .logo{
+    display: flex;
+	align-items: start;
+	flex-wrap: wrap;
+}
+
+header#preamble a {
+    text-decoration: none;
+}
+
+header .logo img {
+    margin-right: 1em;
+}
+
+body > header {
+    padding: 1em;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+header #social {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    column-gap: 0.5em;
+}
+
+body {
+  color: #555;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+code,
+pre {
+  background: #eee;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+}
+
+.timestamp, p[role="doc-subtitle"] {
+    font-family: 'Roboto Mono', monospace;
+    color: #aaa;
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+section.post-list ul {
+  list-style-type: none;
+}
+
+section.post-list li .timestamp::after {
+  content: " »";
+}
+
+footer {
+    padding: 1rem;
+    font-size: 12px;
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+section figure {
+    margin-top: 1.5em;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #000;
+    box-shadow: 1px 2px 5px black;
+}
+
+.org-src-container, pre.example {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+/* https://github.com/fniessen/org-html-themes/blob/master/styles/readtheorg/css/htmlize.css */
 .org-bold { /* bold */ font-weight: bold; }
 .org-bold-italic { /* bold-italic */ font-weight: bold; font-style: italic; }
 .org-buffer-menu-buffer { /* buffer-menu-buffer */ font-weight: bold; }
@@ -14,8 +128,8 @@
 .org-change-log-name { /* change-log-name */ color: #008b8b; }
 .org-comint-highlight-input { /* comint-highlight-input */ font-weight: bold; }
 .org-comint-highlight-prompt { /* comint-highlight-prompt */ color: #00008b; }
-.org-comment { /* font-lock-comment-face */ color: #b22222; }
-.org-comment-delimiter { /* font-lock-comment-delimiter-face */ color: #b22222; }
+.org-comment { /* font-lock-comment-face */ color: #999988; font-style: italic; }
+.org-comment-delimiter { /* font-lock-comment-delimiter-face */ color: #999988; font-style: italic; }
 .org-completions-annotations { /* completions-annotations */ font-style: italic; }
 .org-completions-common-part { /* completions-common-part */ color: #000000; background-color: #ffffff; }
 .org-completions-first-difference { /* completions-first-difference */ font-weight: bold; }
@@ -44,7 +158,7 @@
 .org-flyspell-duplicate { /* flyspell-duplicate */ color: #cdad00; font-weight: bold; text-decoration: underline; }
 .org-flyspell-incorrect { /* flyspell-incorrect */ color: #ff4500; font-weight: bold; text-decoration: underline; }
 .org-fringe { /* fringe */ background-color: #f2f2f2; }
-.org-function-name { /* font-lock-function-name-face */ color: #0000ff; }
+.org-function-name { /* font-lock-function-name-face */ color: teal; }
 .org-header-line { /* header-line */ color: #333333; background-color: #e5e5e5; }
 .org-help-argument-name { /* help-argument-name */ font-style: italic; }
 .org-highlight { /* highlight */ background-color: #b4eeb4; }
@@ -52,7 +166,7 @@
 .org-isearch { /* isearch */ color: #b0e2ff; background-color: #cd00cd; }
 .org-isearch-fail { /* isearch-fail */ background-color: #ffc1c1; }
 .org-italic { /* italic */ font-style: italic; }
-.org-keyword { /* font-lock-keyword-face */ color: #a020f0; }
+.org-keyword { /* font-lock-keyword-face */ color: #0086b3; }
 .org-lazy-highlight { /* lazy-highlight */ background-color: #afeeee; }
 .org-link { /* link */ color: #0000ff; text-decoration: underline; }
 .org-link-visited { /* link-visited */ color: #8b008b; text-decoration: underline; }
@@ -129,13 +243,13 @@
 .org-shadow { /* shadow */ color: #7f7f7f; }
 .org-show-paren-match { /* show-paren-match */ background-color: #40e0d0; }
 .org-show-paren-mismatch { /* show-paren-mismatch */ color: #ffffff; background-color: #a020f0; }
-.org-string { /* font-lock-string-face */ color: #8b2252; }
+.org-string { /* font-lock-string-face */ color: #dd1144; }
 .org-tool-bar { /* tool-bar */ color: #000000; background-color: #bfbfbf; }
 .org-tooltip { /* tooltip */ color: #000000; background-color: #ffffe0; }
 .org-trailing-whitespace { /* trailing-whitespace */ background-color: #ff0000; }
 .org-type { /* font-lock-type-face */ color: #228b22; }
 .org-underline { /* underline */ text-decoration: underline; }
-.org-variable-name { /* font-lock-variable-name-face */ color: #a0522d; }
+.org-variable-name { /* font-lock-variable-name-face */ color: teal; }
 .org-warning { /* font-lock-warning-face */ color: #ff0000; font-weight: bold; }
 .org-widget-button { /* widget-button */ font-weight: bold; }
 .org-widget-button-pressed { /* widget-button-pressed */ color: #ff0000; }
